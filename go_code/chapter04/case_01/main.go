@@ -35,6 +35,6 @@ func main()  {
 	var i int = 10
 	i++ // 等价于 i = i + 1
 	fmt.Println("i =", i)
-	i-- // 等价于 i = i -1
+	i-- // 等价于 i = i - 1
 	fmt.Println("i =", i)
 }

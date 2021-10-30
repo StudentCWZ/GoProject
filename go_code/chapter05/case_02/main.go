@@ -23,10 +23,17 @@ func main()  {
 	//1. 年龄 -> var age byte
 	//2. 从控制台接收一个输入
 	//3. if 判断
-	var age int
-	fmt.Println("请输入年龄：")
-	_, _ = fmt.Scanln(&age)
-	if age > 18 {
+	//var age int
+	//fmt.Println("请输入年龄：")
+	//_, _ = fmt.Scanln(&age)
+	//if age > 18 {
+	//	fmt.Println("你年龄大于 18，要对自己的行为负责")
+	//}
+	// 细节说明：Golang 的 if 还有一个强大的地方就是条件判断语句里面允许声明一个变量，
+	//这个变量的作用只能在该条件逻辑块内，其他地方就不起作用了。
+
+	// Golang 支持在 if 中，直接定义一个变量，比如下面
+	if age := 20; age > 18 {
 		fmt.Println("你年龄大于 18，要对自己的行为负责")
 	}
 }
